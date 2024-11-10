@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <!-- Título principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido de nuevo."
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/strong_blue"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Te hemos echado de menos!"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/light_blue"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Label para el campo de correo electrónico -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo electrónico"
+        android:textSize="16sp"
+        android:textColor="@color/strong_blue"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo de texto para el correo electrónico -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Correo electrónico"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Label para el campo de contraseña -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="16sp"
+        android:textColor="@color/strong_blue"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Campo de texto para la contraseña -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contraseña"
+        android:background="@drawable/rounded_edittext"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/light_grey"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Botón de inicio de sesión -->
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Iniciar sesión"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Texto de "¿No tienes cuenta?" y "Registrarse" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta?"
+            android:textSize="14sp"
+            android:textColor="@color/light_blue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Registrarse"
+            android:textSize="14sp"
+            android:textColor="@color/strong_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

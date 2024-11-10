@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_background">
+
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="249dp"
+        android:layout_height="187dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+
+        android:src="@drawable/ic_bus_icon" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_colored"
+        tools:text="@string/app_name_preview"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/app_icon"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="0dp" /> <!-- Quita el padding para que esté pegado a la imagen -->
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transporte público a tu medida"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_alternates_medium_italic"
+        android:textColor="@color/strong_blue"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="8dp" />
+</RelativeLayout>
+
