@@ -34,7 +34,7 @@
         android:text="Transporte público a tu medida"
         android:textSize="18sp"
         android:fontFamily="@font/montserrat_alternates_medium_italic"
-        android:textColor="@color/strong_blue"
+        android:textColor="@color/primary_color_text"
         android:layout_below="@id/app_name"
         android:layout_centerHorizontal="true"
         android:paddingTop="8dp" />

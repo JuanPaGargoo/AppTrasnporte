@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/strong_blue" />
+    <solid android:color="@color/primary_color_text" />
     <corners android:radius="16dp" />
     <padding android:left="8dp" android:right="8dp" android:top="8dp" android:bottom="8dp"/>
     <shadow android:shadowColor="@color/dark_blue" android:shadowDx="0" android:shadowDy="10" android:shadowRadius="8"/>

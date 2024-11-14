@@ -1,14 +1,15 @@
 [versions]
-agp = "8.6.0"
+agp = "8.6.1"
 kotlin = "1.9.0"
-coreKtx = "1.10.1"
+coreKtx = "1.15.0"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-appcompat = "1.6.1"
-material = "1.10.0"
-activity = "1.8.0"
-constraintlayout = "2.1.4"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.9.3"
+constraintlayout = "2.2.0"
+play-services-maps = "19.0.0" # o la versión que necesites
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -19,6 +20,13 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+google-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "play-services-maps" }
+androidx-lifecycle-viewmodel-ktx = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7"
+androidx-lifecycle-livedata-ktx = "androidx.lifecycle:lifecycle-livedata-ktx:2.8.7"
+androidx-lifecycle-runtime-ktx = "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+androidx-activity-ktx = "androidx.activity:activity-ktx:1.9.3"
+
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

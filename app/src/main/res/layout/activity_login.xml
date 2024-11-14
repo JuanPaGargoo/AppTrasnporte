@@ -2,107 +2,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="top"
     android:orientation="vertical"
-    android:padding="24dp"
-    android:gravity="center"
-    android:background="@color/white">
+    android:padding="24dp">
 
     <!-- Título principal -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido de nuevo."
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:textColor="@color/strong_blue"
-        android:gravity="center"
-        android:layout_marginBottom="8dp" />
 
     <!-- Subtítulo -->
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¡Te hemos echado de menos!"
-        android:textSize="20sp"
-        android:textStyle="italic"
-        android:textColor="@color/light_blue"
-        android:gravity="center"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="top|start"
+        android:text="Bienvenido de nuevo."
+        android:textColor="@color/primary_color_text"
+        android:textSize="42dp"
+        android:fontFamily="@font/kreon"
+         />
 
     <!-- Label para el campo de correo electrónico -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo electrónico"
-        android:textSize="16sp"
-        android:textColor="@color/strong_blue"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="start"
+        android:text="¡Te hemos echado \nde menos!"
+        android:textColor="@color/secondary_color_text"
+        android:textSize="32dp" />
 
-    <!-- Campo de texto para el correo electrónico -->
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Correo electrónico"
-        android:background="@drawable/rounded_edittext"
-        android:padding="12dp"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/black"
-        android:textColorHint="@color/light_grey"
-        android:layout_marginBottom="16dp" />
-
-    <!-- Label para el campo de contraseña -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Correo electrónico"
+        android:textColor="@color/primary_color_text"
+        android:textSize="18dp" />
+
+    <!-- Campo de texto para el correo electrónico -->
+
+    <!-- Label para el campo de contraseña -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical"
+
+        android:background="@color/primary_color_text">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="Contraseña"
-        android:textSize="16sp"
-        android:textColor="@color/strong_blue"
-        android:layout_marginBottom="8dp" />
+        android:textColor="@color/primary_color_text"
+        android:textSize="16sp" />
 
     <!-- Campo de texto para la contraseña -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Contraseña"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/rounded_edittext"
-        android:padding="12dp"
+        android:hint="Contraseña"
         android:inputType="textPassword"
+        android:padding="12dp"
         android:textColor="@color/black"
-        android:textColorHint="@color/light_grey"
-        android:layout_marginBottom="32dp" />
+        android:textColorHint="@color/light_grey" />
 
     <!-- Botón de inicio de sesión -->
     <Button
         android:id="@+id/btnIniciarSesion"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Iniciar sesión"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_button"
-        android:textColor="@color/white"
-        android:textSize="18sp"
         android:fontFamily="@font/poppins_bold"
-        android:layout_marginBottom="16dp" />
+        android:text="Iniciar sesión"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
 
     <!-- Texto de "¿No tienes cuenta?" y "Registrarse" -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="¿No tienes cuenta?"
-            android:textSize="14sp"
-            android:textColor="@color/light_blue" />
+            android:textColor="@color/light_blue"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=" Registrarse"
+            android:textColor="@color/primary_color_text"
             android:textSize="14sp"
-            android:textColor="@color/strong_blue"
             android:textStyle="bold" />
     </LinearLayout>
 
