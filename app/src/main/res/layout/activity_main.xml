@@ -12,31 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Botón 1 (ejemplo) -->
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnRutasCercanas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_gravity="top|start"
-        android:text="Botón 1" />
-
-    <!-- Botón 2 (ejemplo) -->
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_gravity="top|end"
-        android:text="Botón 2" />
-
-    <!-- Botón 3 (ejemplo) -->
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:text="Botón 3" />
+        android:layout_marginTop="700dp"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/primary_color_text"
+        android:text="Rutas Cercanas"
+        android:textColor="@color/white"/>
 
 </FrameLayout>

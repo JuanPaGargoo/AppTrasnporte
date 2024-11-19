@@ -1,5 +1,6 @@
 package com.juanpablo.transporteapp
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.text.Html
@@ -17,27 +18,32 @@ class SplashActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Cambia el color de la barra de estado
+        // Cambia el color de la barra de estado a un color definido en los recursos
         window.statusBarColor = ContextCompat.getColor(this, R.color.blue_background)
 
-        // Configura el TextView con colores
+        // Obtiene el TextView donde se mostrará el nombre de la aplicación y aplica estilos HTML
         val textView = findViewById<TextView>(R.id.app_name)
         textView.text = Html.fromHtml(getString(R.string.app_name_colored), Html.FROM_HTML_MODE_LEGACY)
 
-        // Inicializa el mapa para que comience a precargar en segundo plano
+        // Inicializa el fragmento del mapa en segundo plano para precargarlo
+        // Esto puede ayudar a reducir el tiempo de carga del mapa en actividades posteriores
         val mapFragment = SupportMapFragment.newInstance()
-        supportFragmentManager.beginTransaction().add(mapFragment, "mapFragment").commit()
-        mapFragment.getMapAsync(this)
+        supportFragmentManager.beginTransaction()
+            .add(mapFragment, "mapFragment") // Agrega el fragmento del mapa al fragment manager
+            .commit()
+        mapFragment.getMapAsync(this) // Solicita notificación cuando el mapa esté listo
 
-        // Inicia la transición a LoginActivity después de 3 segundos
+        // Usa corutinas para retrasar la transición al LoginActivity
         GlobalScope.launch {
-            delay(6000)
+            delay(6000) // Espera 6 segundos (6000 milisegundos)
+            // Cambia a LoginActivity después del retraso
             startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
-            finish()
+            finish() // Finaliza el SplashActivity para que no esté en la pila de actividades
         }
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
-        // No necesitas hacer nada aquí por ahora, solo dejar que el mapa se inicialice.
+        // Este callback se ejecuta cuando el mapa está listo
+        // No necesitas realizar ninguna acción aquí en el SplashActivity
     }
 }
